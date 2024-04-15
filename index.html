@@ -2,39 +2,40 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meeting</title>
     </head>
 
     <body>
         <header>
-            <div>All Informations</div>
+            <h1>All Information</h1>
 
             <nav>
                 <ul>
-                    <li><a href="#mumber's names">Names</a></li>
-                    <li><a href="#video recording">Video</a></li>
+                    <li><a href="#members-names">Names</a></li>
+                    <li><a href="#video-recording">Video</a></li>
                     <li><a href="#subscribe">Subscribe</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <h1>Team 33</h1>
+            <h2>Team 33</h2>
 
             <hr />
 
-            <h4>Tools we use</h4>
+            <section>
+                <h3>Tools we use</h3>
+                <img 
+                    src="https://st3.zoom.us/static/6.3.20541/image/thumb.png" 
+                    alt="Tool"
+                    width="250"
+                >
+            </section>
 
-            <img 
-                src="https://st3.zoom.us/static/6.3.20541/image/thumb.png" 
-                alt="Tool"
-                width="250"
-            >
-
-            <h4>Names(check the box if attened)</h4>
-
-            <ol>
+            <section id="members-names">
+                <h3>Names (check the box if attended)</h3>
+                <ol>
                 <li><input type="checkbox" name="member" value="Jianing Yue"></li>
                 <li><input type="checkbox" name="member" value="Anna Lee"></li>
                 <li><input type="checkbox" name="member" value="Brendan Kuang"></li>
@@ -48,45 +49,37 @@
                 <li><input type="checkbox" name="member" value="Ryandeep Shelopal"></li>
                 <li><input type="checkbox" name="member" value="Siddharth Mundra"></li>
             </ol>
+            </section>
 
-            <h4>Things we have disscussed</h4>
+            <section>
+                <h3>Things we have discussed</h3>
+                <p>
+                    We met at 5pm in the basement. We created a GitHub page first, discussed team rules,
+                    team name, and logo. Then we filmed a video and took screenshots to document. Finally,
+                    we submitted everything Canvas needs.
+                </p>
+            </section>
 
-            <p>
-                We met at 5pm in basement, We crate Github page first, disscussed team rules.
-                Then we disscussed team name and logo, then we film the video and screenshot to prove.
-                Then we submitted everything canves needs. 
-            </p>
-
-
-            <h4>Recording</h4>
-            We didn't record for this time but we take a photo.
-
+            <section id="video-recording">
+                <h3>Recording</h3>
+                <p>We didn't record this time, but we took a photo.</p>
+            </section>
 
             <aside>
                 <details>
-                    <summary>Here are more detailes</summary>
-                    <p>Everyone is here today and we did a good job, we finished lots of work</p>
+                    <summary>More details</summary>
+                    <p>Everyone was here today, and we did a good job, we finished lots of work.</p>
                 </details>
             </aside>
-           
-
-
-
-
-
-
         </main>
 
         <hr />
 
         <footer>
-
-            <h6 id="subscribe">Subscribe</h6>
-
-            <form onsubmit="alert('Subscribed')">
-                <input type="text" placeholder="Enter Email Address" />
-
-                <button>Submit</button>
+            <h4 id="subscribe">Subscribe</h4>
+            <form onsubmit="return confirm('Do you want to subscribe?');">
+                <input type="email" placeholder="Enter Email Address" required />
+                <button type="submit">Submit</button>
             </form>
         </footer>
     </body>
