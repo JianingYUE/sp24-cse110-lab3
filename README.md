@@ -1,2 +1,2 @@
 # Lab2
-https://github.com/JianingYUE/Lab2/tree/main
+https://github.com/JianingYUE/sp24-cse110-lab3
