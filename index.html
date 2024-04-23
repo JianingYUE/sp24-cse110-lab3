@@ -131,6 +131,15 @@
               padding: 20px 0;
               font-size: 30px;
             }
+            .test > p {
+              background-color: yellow;
+            }
+            .test + p {
+              background-color: red;
+            }
+            .test ~p{
+                background-color: chocolate;
+            }
 
         
             
@@ -237,6 +246,19 @@
                       <div class="item4">Right</div>
                       <div class="item5">Footer</div>
                     </div>
+                    <div class="test">
+                        <p>Paragraph 1 in the div.</p>
+                        <p>Paragraph 2 in the div.</p>
+                        <section>
+                            <!-- not Child but Descendant -->
+                            <p>Paragraph 3 in the div (inside a section element).</p>
+                        </section>
+                        <p>Paragraph 4 in the div.</p>
+                    </div>
+                        <p>Paragraph 5. Not in a div.</p>
+                        <p>Paragraph 6. Not in a div.</p>
+                    
+                    
                 </details>
             </aside>
         </main>
