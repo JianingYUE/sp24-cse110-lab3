@@ -20,10 +20,21 @@
 
             h2{
                 color: var(--main-color, red);
+                font_size:5cm;
             }
 
             h3{
                 color: var(--head-color, blue);
+                frount_size:5pc;
+            }
+
+            p{
+                margin:0;
+                background-image: repeating-linear-gradient(
+                    to top,
+                    lightskyblue 0 2px,
+                    transparent 2px 1lh
+                );
             }
             
         </style>
@@ -76,7 +87,7 @@
 
             <section>
                 <h3>Things we have discussed</h3>
-                <p>
+                <p style="line-height: 2em">
                     We met at 5pm in the basement. We created a GitHub page first, discussed team rules,
                     team name, and logo. Then we filmed a video and took screenshots to document. Finally,
                     we submitted everything Canvas needs.
@@ -85,7 +96,14 @@
 
             <section id="video-recording">
                 <h3>Recording</h3>
-                <p>We didn't record this time, but we took a photo.</p>
+                <video width="320" height="240" controls>
+                    <source src="video1080427347.mp4" type="video/mp4">
+                </video>
+
+                <hr>
+                <audio controls>
+                    <source src="audio1080427347.m4a" type="audio/mp4">
+                </audio>
             </section>
 
             <aside>
