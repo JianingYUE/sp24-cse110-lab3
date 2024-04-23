@@ -140,7 +140,15 @@
             .test ~p{
                 background-color: chocolate;
             }
-
+            div:has(> a[target]) {
+                border: 2px solid green;
+                padding: 5px;
+            }
+            
+            div.test > p + p {
+                color: purple;
+                font-weight: bold;
+            }
         
             
         </style>
