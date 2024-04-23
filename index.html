@@ -69,6 +69,15 @@
                 margin: auto;
                 border: 1px solid lightblue;
             }
+            div.static{
+                position:static;
+                border: 3px solid #73AD21;
+            }
+            div.relative{
+                position: relative;
+                left:30px;
+                border: 3px solid #73AD21;
+            }
 
         
             
@@ -117,11 +126,13 @@
                 <li><input type="checkbox" name="member" value="Piao Xie"></li>
                 <li><input type="checkbox" name="member" value="Ryandeep Shelopal"></li>
                 <li><input type="checkbox" name="member" value="Siddharth Mundra"></li>
-            </ol>
+                </ol>
             </section>
 
             <section>
                 <h3>Things we have discussed</h3>
+                <div class="static">This div element has position: static</div>
+                <div class="relative">This div has position: relat<div>
                 <p style="line-height: 2em">
                     We met at 5pm in the basement. We created a GitHub page first, discussed team rules,
                     team name, and logo. Then we filmed a video and took screenshots to document. Finally,
