@@ -1,1 +1,112 @@
+/* Base styles */
+* {
+    background-color: lightblue; /* Sets a default background color */
+}
+:root {
+    --main-color: blue; /* Main color variable */              
+}
+body {
+    display: inline;
+    background-color: linen;
+}
 
+/* Typography */
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: red;
+    font-size: 50px; /* Large text for headers */
+}
+h2 {
+    color: var(--main-color, red); /* Uses CSS variable for color */
+    font-size: 5cm; /* Very large font size */
+}
+h3 {
+    color: var(--head-color, blue); /* Fallback color if CSS variable is undefined */
+    font-size: 5pc;
+}
+p {
+    display: inherit;
+    margin: 0;
+    color: chocolate;
+    background-image: repeating-linear-gradient(
+        to top,
+        lightskyblue 0 2px,
+        transparent 2px 1lh
+    ); /* Textured background for paragraphs */
+}
+
+/* Class-specific styles */
+.a {
+    display: contents;
+    border: 1px solid orange;
+    background-color: black;
+    padding-left: 10px;
+    width: 200px;
+}
+.b {
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+/* Utility and combined classes */
+.style1 {
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+.b, .style1 {
+    background-color: lightblue; /* Shared background color for multiple classes */
+}
+
+/* Responsive design settings */
+@media screen and (min-width: 480px) {
+    body {
+        background-color: #73AD21; /* Changes background color for wider screens */
+    }
+}
+
+/* Flexbox container */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: Orange;
+}
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+/* Grid layout example */
+.grid-container2 {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+.grid-container2 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/* Miscellaneous */
+.test > p {
+    background-color: yellow; /* Highlights first paragraph */
+}
+.test + p {
+    background-color: red; /* Styles paragraph following .test class */
+}
+.test ~ p {
+    background-color: chocolate; /* Affects all subsequent paragraphs */
+}
